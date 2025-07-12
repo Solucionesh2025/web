@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluciones H - Empleos en Huánuco</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="SOLUCIONES_H(PORTADA).css">
+  <link rel="stylesheet" href="SOLUCIONES_H(FORMULARIO).css">
+  <link rel="stylesheet" href="SOLUCIONES_H(CONTACTANOS).css">
+  <link rel="stylesheet" href="SOLUCIONES_H(NOSOTROS).css">
+  <link rel="stylesheet" href="SOLUCIONES_H(FOOTER).css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <style>
+    .oculto { display: none; }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-weight: bold;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    nav button:hover {
+      color: #000000;
+    }
+    .activo {
+      display: block !important;
+    }
+  </style>
+</head>
+<body>
+    <span class="mask bg-gradient-dark opacity-5"></span>
+
+  <header>
+    <nav class="navbar">
+  <div class="logo-nav">
+    <img src="SH.png" alt="Logo" class="logo-pequeño">
+    <span>Soluciones Huanuqueñas</span>
+  </div>
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul class="nav-links" id="nav-links">
+    <li><button onclick="mostrarSeccion('inicio')">Inicio</button></li>
+    <li><button onclick="mostrarSeccion('ofertas')">Avisos</button></li>
+    <li><button onclick="mostrarSeccion('postular')">Publicar Aviso</button></li>
+    <li><button onclick="mostrarSeccion('detalles')">Contáctanos</button></li>
+    <li><button onclick="mostrarSeccion('contacto')">Nosotros</button></li>
+</ul>
+</nav>
+    
+    <section class="hero" id="inicio">
+      <div class="contenido-hero">
+      <img src="SH.png" alt="Logo Soluciones Huanuqueñas" class="logo">
+      <h1>Soluciones Huanuqueñas</h1>
+      <p>Tu espacio para encontrar y publicar oportunidades en Huánuco</p>
+      <div class="botones">
+        <button onclick="mostrarSeccion('ofertas')" class="btn-secundario">Avisos</button>
+        <button onclick="mostrarSeccion('postular')" class="btn-secundario">Publicar vacante</button>  
+      </div>
+    </div>
+    <br>
+    </section>
+  </header>
+<!------------------ofertas------- -->
+  <section class="highlighted-jobs oculto" id="ofertas">
+    <div class="mary"><h1>ENCUENTRA EL TRABAJO QUE NECESITAS..</h1></div>
+    
+  <div class="contenedor-aviso">
+    <!-- Aviso 1 - Gastronomía -->
+  <div class="aviso-container">
+    <h1>AYUDANTE DE COCINA</h1>
+    <img src="A1.png" alt="Logo">
+    <h2>RESTAURANTE HUÁNUCO SABOR</h2>
+    <p><b>Requisitos:</b> Experiencia mínima 1 año</p>
+    <p><b>Contrato:</b> Tiempo completo</p>
+    <p><b>Salario:</b> S/.1025</p>
+    <p><b>Ubicación:</b> Jr. Abtao 321, Huánuco</p>
+    <p><b>Celular:</b> 945888111</p>
+    <p><b>Expira:</b> 2025-07-31</p>
+    <a class="whatsapp-btn" href="https://wa.me/51945888111" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 2 - Gastronomía -->
+  <div class="aviso-container">
+    <h1>MOZO/A CON EXPERIENCIA</h1>
+    <img src="A2.png" alt="Logo">
+    <h2>CAFÉ DEL VALLE</h2>
+    <p><b>Requisitos:</b> Trato amable, buena presencia</p>
+    <p><b>Contrato:</b> Part-time</p>
+    <p><b>Salario:</b> S/.600</p>
+    <p><b>Ubicación:</b> Plaza de Armas, Huánuco</p>
+    <p><b>Celular:</b> 947774411</p>
+    <p><b>Expira:</b> 2025-07-29</p>
+    <a class="whatsapp-btn" href="https://wa.me/51947774411" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 3 - Agricultura -->
+  <div class="aviso-container">
+    <h1>OPERARIO DE COSECHA</h1>
+    <img src="A3.png" alt="Logo">
+    <h2>AGRÍCOLA ANDINA</h2>
+    <p><b>Requisitos:</b> Trabajo físico, campo</p>
+    <p><b>Contrato:</b> Temporada</p>
+    <p><b>Salario:</b> S/.1100</p>
+    <p><b>Ubicación:</b> Churubamba, Huánuco</p>
+    <p><b>Celular:</b> 944222333</p>
+    <p><b>Expira:</b> 2025-08-05</p>
+    <a class="whatsapp-btn" href="https://wa.me/51944222333" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 4 - Agricultura -->
+  <div class="aviso-container">
+    <h1>ASISTENTE AGRÓNOMO</h1>
+    <img src="A4.png" alt="Logo">
+    <h2>PROYECTO CAFÉ HUÁNUCO</h2>
+    <p><b>Requisitos:</b> Técnico o bachiller en Agronomía</p>
+    <p><b>Contrato:</b> A plazo fijo</p>
+    <p><b>Salario:</b> S/.1500</p>
+    <p><b>Ubicación:</b> Tingo María</p>
+    <p><b>Celular:</b> 949111222</p>
+    <p><b>Expira:</b> 2025-08-01</p>
+    <a class="whatsapp-btn" href="https://wa.me/51949111222" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 5 - Transporte -->
+  <div class="aviso-container">
+    <h1>CHOFER DE OBNIBUS</h1>
+    <img src="A5.png" alt="Logo">
+    <h2>TRANSPORTE HUANUQUEÑO</h2>
+    <p><b>Requisitos:</b> Licencia A2B o A3C</p>
+    <p><b>Contrato:</b> Estable</p>
+    <p><b>Salario:</b> S/.2000</p>
+    <p><b>Ubicación:</b> Amarilis, Huánuco</p>
+    <p><b>Celular:</b> 948555666</p>
+    <p><b>Expira:</b> 2025-07-28</p>
+    <a class="whatsapp-btn" href="https://wa.me/51948555666" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 6 - Transporte -->
+  <div class="aviso-container">
+    <h1>MOTOTAXISTA</h1>
+    <img src="A6.png" alt="Logo">
+    <h2>PARADERO UNIVERSITARIO</h2>
+    <p><b>Requisitos:</b> Moto propia y licencia</p>
+    <p><b>Contrato:</b> Independiente</p>
+    <p><b>Salario:</b> A comisión</p>
+    <p><b>Ubicación:</b> Pillco Marca</p>
+    <p><b>Celular:</b> 946777888</p>
+    <p><b>Expira:</b> 2025-08-10</p>
+    <a class="whatsapp-btn" href="https://wa.me/51946777888" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 7 - Diversión -->
+  <div class="aviso-container">
+    <h1>ANIMADOR INFANTIL</h1>
+    <img src="A7.png" alt="Logo">
+    <h2>FIESTAS Y GLOBOS "MUNDO MAGICO"</h2>
+    <p><b>Requisitos:</b> Creativo, dinámico</p>
+    <p><b>Contrato:</b> Eventos por horas</p>
+    <p><b>Salario:</b> S/.50 por evento</p>
+    <p><b>Ubicación:</b> Centro de Huánuco</p>
+    <p><b>Celular:</b> 940444333</p>
+    <p><b>Expira:</b> 2025-08-03</p>
+    <a class="whatsapp-btn" href="https://wa.me/51940444333" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 8 - Diversión -->
+  <div class="aviso-container">
+    <h1>DJ PARA EVENTOS</h1>
+    <img src="A8.png" alt="Logo">
+    <h2>HUÁNUCO MOBILE DJ</h2>
+    <p><b>Requisitos:</b> Experiencia + laptop propia</p>
+    <p><b>Contrato:</b> Por servicio</p>
+    <p><b>Salario:</b> S/.200 por noche</p>
+    <p><b>Ubicación:</b> Amarilis</p>
+    <p><b>Celular:</b> 941123123</p>
+    <p><b>Expira:</b> 2025-08-07</p>
+    <a class="whatsapp-btn" href="https://wa.me/51941123123" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 9 - Otros -->
+  <div class="aviso-container">
+    <h1>ASISTENTE CONTABLE</h1>
+    <img src="A14.png" alt="Logo">
+    <h2>ESTUDIO CONTABLE F&M</h2>
+    <p><b>Requisitos:</b> Egresado contabilidad</p>
+    <p><b>Contrato:</b> Tiempo completo</p>
+    <p><b>Salario:</b> S/.1300</p>
+    <p><b>Ubicación:</b> Jr. Dos de Mayo</p>
+    <p><b>Celular:</b> 945555123</p>
+    <p><b>Expira:</b> 2025-08-12</p>
+    <a class="whatsapp-btn" href="https://wa.me/51945555123" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 10 - Otros -->
+  <div class="aviso-container">
+    <h1>SECURIDAD / VIGILANTE</h1>
+    <img src="A9.png" alt="Logo">
+    <h2>SEGURIDAD JS ARMADOS</h2>
+    <p><b>Requisitos:</b> Disponibilidad turnos noche</p>
+    <p><b>Contrato:</b> Rotativo</p>
+    <p><b>Salario:</b> S/.1400</p>
+    <p><b>Ubicación:</b> Amarilis, Mall Real Plaza</p>
+    <p><b>Celular:</b> 943123321</p>
+    <p><b>Expira:</b> 2025-08-08</p>
+    <a class="whatsapp-btn" href="https://wa.me/51943123321" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 11 - Otros -->
+  <div class="aviso-container">
+    <h1>LIMPIEZA GENERAL "PRIMAVERAL"</h1>
+    <img src="A10.png" alt="Logo">
+    <h2>CLEAN HOUSE</h2>
+    <p><b>Requisitos:</b> Puntualidad y responsabilidad</p>
+    <p><b>Contrato:</b> Parcial</p>
+    <p><b>Salario:</b> S/.950</p>
+    <p><b>Ubicación:</b> Las Moras, Huánuco</p>
+    <p><b>Celular:</b> 942000888</p>
+    <p><b>Expira:</b> 2025-08-02</p>
+    <a class="whatsapp-btn" href="https://wa.me/51942000888" target="_blank">Contactar</a>
+  </div>
+
+  <!-- Aviso 12 - Otros -->
+  <div class="aviso-container">
+    <h1>TÉCNICO EN REFRIGERACIÓN</h1>
+    <img src="A11.png" alt="Logo">
+    <h2>ATEDSA</h2>
+    <p><b>Requisitos:</b> Conocimiento de aire acondicionado</p>
+    <p><b>Contrato:</b> Freelance</p>
+    <p><b>Salario:</b> S/.100 por servicio</p>
+    <p><b>Ubicación:</b> Huánuco ciudad</p>
+    <p><b>Celular:</b> 941999777</p>
+    <p><b>Expira:</b> 2025-08-09</p>
+    <a class="whatsapp-btn" href="https://wa.me/51941999777" target="_blank">Contactar</a>
+  </div>
+  </div>
+    <div class="M" id="jobsContainer"></div>
+  </section>
+<!------------------ofertas------- -->
+  <section class="oculto" id="postular">
+    <div class="container">
+      <div class="mary"><h1>ENCUENTRA TU COLABORADOR LABORAL YAA!!</h1></div>
+      <div class="grid-container">
+        <div class="form-group full-width">
+          <label for="tituloPuesto">TÍTULO DEL PUESTO:</label>
+          <input type="text" id="tituloPuesto">
+        </div>
+        <div class="form-group full-width">
+          <label for="descripcionPuesto">DESCRIPCIÓN DEL PUESTO:</label>
+          <textarea id="descripcionPuesto"></textarea>
+        </div>
+        <div class="form-group full-width">
+          <label for="requisitos">REQUISITOS:</label>
+          <textarea id="requisitos"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="tipoContrato">TIPO DE CONTRATO:</label>
+          <select id="tipoContrato">
+            <option value="">Seleccione una opción</option>
+            <option value="indefinido">Indefinido</option>
+            <option value="plazoFijo">A plazo fijo</option>
+            <option value="temporal">Temporal</option>
+            <option value="porProyecto">Por proyecto</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="salarioMinimo">SALARIO MÍNIMO:</label>
+          <input type="number" id="salarioMinimo">
+        </div>
+        <div class="form-group">
+          <label for="salarioMaximo">SALARIO MÁXIMO:</label>
+          <input type="number" id="salarioMaximo">
+        </div>
+        <div class="form-group">
+          <label for="region">REGIÓN:</label>
+          <select id="region">
+            <option value="">Seleccione una región</option>
+            <option value="Lima">Lima</option>
+            <option value="Huanuco">Huánuco</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Puno">Puno</option>
+            <option value="Moquegua">Moquegua</option>
+            <option value="Tacna">Tacna</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Ica">Ica</option>
+            <option value="Junin">Junin</option>
+            <option value="Huancavelica">Huancavelica</option>
+            <option value="Loreto">Loreto</option>
+            <option value="Ucayali">Ucayali</option>
+            <option value="San martin">San Martin</option>
+            <option value="Pasco">Pasco</option>
+            <option value="Tumbes">Tumbes</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Apurimac">Apurimac</option>
+            <option value="La Libertad">La Libertad</option>
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="ciudad">PROVINCIA:</label>
+          <input type="text" id="ciudad">
+        </div>
+        <div class="form-group">
+          <label for="direccion">DIRECCIÓN:</label>
+          <input type="text" id="direccion">
+        </div>
+        <div class="form-group">
+          <label for="nombreEmpresa">NOMBRE DE LA EMPRESA:</label>
+          <input type="text" id="nombreEmpresa">
+        </div>
+        <div class="form-group">
+          <label for="fechaExpiracion">FECHA DE EXPIRACIÓN:</label>
+          <input type="date" id="fechaExpiracion">
+        </div>
+        <div class="form-group">
+          <label for="celular">Nº CELULAR:</label>
+          <input type="text" id="celular">
+        </div>
+        <div class="form-group">
+          <label for="logoEmpresa">AGREGAR LOGO DE LA EMPRESA:</label>
+          <input type="file" id="logoEmpresa" accept="image/*">
+        </div>
+      </div>
+      <div class="button-group">
+        <button onclick="publicarAviso()" type="submit" class="btn-publicar">PUBLICAR</button>
+      </div><br>
+    </div>
+  </section>
+<!------------------contactanos------- -->
+  <section class="detalles-publicacion oculto" id="detalles">
+      <center><div class="frase-inicio">
+      <h1>Contactate con Soluciones Huanuqueñas</h1>
+      <p>Ofrece más que un trabajo... <strong>ofrece confianza</strong> 🤝</p>
+    </div>
+
+    <div class="mensaje">
+      <p>Nuestra plataforma conecta personas, oportunidades y sueños. Gracias a la colaboración de emprendedores y empresas locales, Soluciones Huanuqueñas es más que una bolsa de trabajo: es una comunidad.</p>
+    </div>
+      <div class="contenido-hero">
+        <p>"Esto es Soluciones Huanuqueñas: Trabajo real, para gente real"</p>
+      <video width="290" controls>
+  <source src="SHJ.mp4" type="video/mp4">
+</video>
+    </div><br>
+    <div class="empresarios">
+      <h2>Empresarios Asociados</h2>
+      <div class="lista-empresarios">
+        <div class="empresario">
+          <img src="2.png" alt="Empresa 1">
+          <h4>Los Andes SAC</h4>
+          <p>Rubros: construcción y mantenimiento</p>
+        </div>
+
+        <div class="empresario">
+          <img src="Captura de pantalla 2025-06-12 102206.png" alt="Empresa 2">
+          <h4>El Viajero</h4>
+          <p>Rubros: gastronomía y alimentos</p>
+        </div>
+
+        <div class="empresario">
+          <img src="m.jpg" alt="Empresa 3">
+          <h4>Transportes del Valle</h4>
+          <p>Rubros: transporte y logística</p>
+        </div>
+
+        <div class="empresario">
+          <img src="Captura de pantalla 2025-06-12 094842.png" alt="Empresa 4">
+          <h4>Aceros Arequipa</h4>
+          <p>Rubros: herramientas y materiales</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacto-final">
+      <h3>¿Quieres sumarte como aliado?</h3>
+      <p>Contáctanos para que tu empresa también forme parte de esta red de confianza.</p>
+      <a href="https://wa.me/51945144701" class="btn-contacto"><i class="fab fa-whatsapp"></i> Escríbenos al WhatsApp</a>
+    </div><br><br>
+  </section>
+
+  <section class="oculto" id="contacto">
+    <div class="cabecera">
+      <h1>Nuestro Equipo</h1>
+  <p style="max-width: 800px; margin: 0 auto; font-size: 18px; line-height: 1.8;">
+    <strong>Soluciones Huanuqueñas</strong> nació de una necesidad real: 
+    ayudar a la gente de nuestra tierra a encontrar trabajo sin tener que depender de plataformas complicadas o costosas. 
+    Todo comenzó en una pequeña sala, con una laptop prestada, café bien cargado, y las ganas de marcar la diferencia.
+
+    Este sitio fue desarrollado por un equipo huanuqueño que conoce la realidad local, sus necesidades y su potencial. 
+    Comenzamos con una idea sencilla: crear un espacio donde cualquier persona pudiera ofrecer o encontrar trabajo 
+    de manera rápida, gratuita y segura. Poco a poco, fuimos sumando funciones, diseñando formularios, probando botones (¡algunos no funcionaban ni con rezo!) 
+    y mejorando la experiencia para que hasta doña Juana del mercado pueda usarlo sin enredarse.
+
+    Hoy seguimos creciendo, con más ganas que nunca y con los pies bien puestos en Huánuco. 
+    Esta plataforma es para ti, para tu barrio, para tu familia. ¡Gracias por confiar en nosotros!
+  </p>
+    </div><br>
+
+    <div class="tarjetas">
+      <!-- CHRISTIAN -->
+      <div class="tarjeta">
+        <center>
+        <img src="12.jpg" alt="Christian">
+        <h3>Espinoza Abad,Christian</h3>
+        <p>Programador en CSS/HTML</p>
+        <div class="redes">
+          <a href="https://wa.me/51945144701" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://instagram.com/christian_dev" class="btn-instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <!-- CAPIBARA -->
+      <div class="tarjeta">
+        <center>
+        <img src="cap.png" alt="Capibara">
+        <h3>Salas Celadita, Fógil Edú</h3>
+        <p>Diseñador HTML</p>
+        <div class="redes">
+          <a href="https://wa.me/51967617329" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://www.instagram.com/edusalas_c06/profilecard/?igsh=aGJ2NTdybnF0aXk4" class="btn-instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <!-- POMA -->
+      <div class="tarjeta">
+        <center>
+        <img src="poma.png" alt="Poma">
+        <h3>Poma Reynoso, Franco</h3>
+        <p>Encargado de desarrollo Frontend y la idea de la plataforma</p>
+        <div class="redes">
+          <a href="https://wa.me/51914304820" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://www.instagram.com/francopomareynoso?utm_source=qr&igsh=MWJpd3RwOGh4dHBkZQ==" class="btn-instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <!-- CHAOS -->
+      <div class="tarjeta">
+        <center>
+        <img src="jpg.jpg" alt="Chaos">
+        <h3>Carlos Garay, Jhomer Ernesto</h3>
+        <p>Desarrollador JS</p>
+        <div class="redes">
+          <a href="https://wa.me/51913570057" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://instagram.com/chaos.qa" class="btn-instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+
+      <!-- ANGELY -->
+      <div class="tarjeta">
+        <center>
+        <img src="angely.png" alt="Angely">
+        <h3>Cabanillas Pillco,Angely</h3>
+        <p>Desarrollador CSS</p>
+        <div class="redes">
+          <a href="https://wa.me/51965201310" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://instagram.com/angely.support" class="btn-instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!------------------nosotros------- -->
+  
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.add('oculto'));
+      document.getElementById(id).classList.remove('oculto');
+    }
+  </script>
+  <script src="S_H.js"></script>
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-contenido">
+    <div class="footer-logo">
+      <h2>Soluciones Huanuqueñas</h2>
+      <p>Conectando oportunidades en nuestra tierra.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#publicar">Publicar</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="footer-contacto">
+      <p><i class="fas fa-phone"></i> +51 945 144 701</p>
+      <p><i class="fas fa-envelope"></i> contacto@solucionesh.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Huánuco, Perú</p>
+
+      <!-- Redes sociales con texto -->
+      <div class="footer-redes" style="margin-top: 20px;">
+        <p style="margin-bottom: 8px; font-weight: bold;">Síguenos en nuestras cuentas:</p>
+        <a href="https://www.facebook.com/profile.php?id=61578207153129" target="_blank" style="margin-right: 10px;">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/soluciones_huanuque/" target="_blank" style="margin-right: 10px;">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@soluciones_huanu?lang=es" target="_blank">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+    </div><br><br>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Soluciones Huanuqueñas. Todos los derechos reservados.</p>
+  </div>
+
+
+</body>
+</html>
